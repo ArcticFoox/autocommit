@@ -10,7 +10,7 @@ echo $commitMag
 
 problemId=`echo ${commitMag:2} | cut -d ' ' -f1`
 problemKind=`echo ${commitMag:2} | cut -d ' ' -f2`
-problemURL=`echo ${commitMag:2} | cut -d ' ' -f3`
+problemURL=`echo 'https://www.acmicpc.net/problem/'$problemId`
 problemCommit=`echo -e $problemKind'\n'$problemURL`
 
 echo $problemId
